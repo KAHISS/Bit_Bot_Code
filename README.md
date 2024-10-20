@@ -1,12 +1,14 @@
-# Bot de marcação de aulas #
+# Bot Bit Code #
+Esse é um bot de atomação para marcar as aulas como concluidas na plataforma One Bit Code. Ele foi feito com Selenium e
+a interface com o customtkinter
 ## Passo a passo ##
-1. Baixe o execultável do bot que está nas releases
-2. Abra a aba da seção onde fica as aulas e onde aparece o botão de concluir aula
-3. Execute o programa, aperte ok na mensagem que vai aparecer e deixe o mouse em cima do botão "Concluir aula" e aperte "p" para gravar a posição
-4. Confirme se a posição esta correta ou se quer repetir o processo de gravar a posição, depois aperte em ok para continuar
-5. Agora e só voltar pra aba do curso e deixar rodando e quando quiser parar e só fechar o programa
-6. o delay do bot é de 5 segundos
+1. Baixe o execultável do bot 
+2. Execute
+3. Coloque seu email e sua senha para logar na plataforma
+4. Cole o link da aula que você quer começar a marcar e o link da ultima aula que quer marcar
+5. Aperte o botão e é so esperar o bot marcar suas aulas
 
+## Tutorial ##
 <video width="450" height="240" controls>
-  <source src="tutorial.mp4" type="video/mp4">
+  <source src="assets/tutorial.mp4" type="video/mp4">
 </video>

@@ -20,12 +20,8 @@ class BitBotCode:
         self.browser.find_element(By.NAME, "commit").click()
     
     def checkClass(self, init, end):
+        sleep(5)
         self.browser.get(init)
         while self.browser.current_url != end:
-            self.browser.find_element(By.CLASS_NAME, 'bg-circle-button').click()
             sleep(5)
-
-if __name__ == "__main__":
-    bot = BitBotCode()
-    bot.login('ksilvasousa1@gmail.com', 'Kaique.1')
-    bot.checkClass("https://comunidade.onebitcode.com/c/curso/sections/360098/lessons/1336828", "https://comunidade.onebitcode.com/c/curso/sections/360098/lessons/1336850")
+            self.browser.find_element(By.CLASS_NAME, 'bg-circle-button').click()

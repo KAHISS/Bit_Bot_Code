@@ -8,7 +8,6 @@ class App:
         self.root = CTk()
         self.root.title("Bit Bot Code")
         self.root.geometry("360x400")
-        self.root.iconbitmap('assets/robo.ico')
         self.widgets()
         self.root.mainloop()
 
@@ -26,14 +25,14 @@ class App:
         CTkLabel(self.root, text='Fim', font=("Arial", 23)).place(x=165, y=265)
         self.inputEnd = CTkEntry(self.root, placeholder_text='Insira o link de início', width=160*2, height=40)
         self.inputEnd.place(x=20, y=300)
-        CTkButton(self.root, width=320, height=40, command=self.initBot).place(x=20, y=351)
+        CTkButton(self.root, width=320, height=40, command=self.initBot, text='Iniciar', font=('Arial', 21)).place(x=20, y=351)
 
 
     def initBot(self):
         if not "" in [self.inputEmail.get(), self.inputPassword.get(), self.inputInit.get(), self.inputEnd.get()]:
             bot = BitBotCode()
             bot.login(self.inputEmail.get(), self.inputPassword.get())
-            bot.checkClass(self.inputInit, self.inputEnd.get())
+            bot.checkClass(self.inputInit.get(), self.inputEnd.get())
         else:
             messagebox.showerror("Error", "Preencha todos os campos")
 

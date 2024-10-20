@@ -3,3 +3,4 @@ build/
 dist/
 bot.spec
 __pycache__
+app.spec
