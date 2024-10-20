@@ -1,5 +1,5 @@
 # Bot Bit Code #
-Esse é um bot de atomação para marcar as aulas como concluidas na plataforma One Bit Code. Ele foi feito com Selenium e
+Esse é um bot de automação para marcar as aulas como concluidas na plataforma One Bit Code. Ele foi feito com Selenium e
 a interface com o customtkinter
 ## Passo a passo ##
 1. Baixe o execultável do bot [aqui](https://github.com/KAHISS/Bit_Bot_Code/releases/download/v1.0.0/app.exe)
